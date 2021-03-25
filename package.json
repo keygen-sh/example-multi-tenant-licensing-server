@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "engines": {
+    "node": "~14.9.0"
+  },
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "pg": "^8.5.1"
+  }
+}
