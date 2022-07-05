@@ -153,10 +153,10 @@ async function validateLicenseForEmailAndDevice(email, deviceId) {
     }
   }
 
-  console.log(`[INFO] Validated license: email=${email} device_id=${deviceId} valid=${meta.valid} code=${meta.constant} id=${license?.id ?? ''} key=${key} fingerprint=${fingerprint}`)
+  console.log(`[INFO] Validated license: email=${email} device_id=${deviceId} valid=${meta.valid} code=${meta.code} id=${license?.id ?? ''} key=${key} fingerprint=${fingerprint}`)
 
   return {
-    code: meta.constant,
+    code: meta.code,
     valid: meta.valid,
     license,
   }
